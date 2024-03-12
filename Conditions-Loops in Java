@@ -1,1 +1,41 @@
+import java.util.Scanner;
+
+public class Loops {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+
+        /*
+        While Loop
+        int num = 1;
+        while ( num <= 5) {
+        System.out.println(num);
+        num +=1;
+         */
+
+        /*
+        do-while loop
+
+        int n = 1;
+
+        do {
+        System.out.println(n);
+        n++;
+        }while (n!=1);
+
+
+         */
+
+        int max = a;
+        if(b>max){
+            max =b;
+        }
+        if(c>max){
+            max=c;
+        }
+        System.out.println(max);
+    }
+}
 
