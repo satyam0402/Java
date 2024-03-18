@@ -1,25 +1,40 @@
-import java.net.StandardSocketOptions;
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-//public class Main {
-//    public static void main(String[] args) {
-//        // Press Opt+Enter with your caret at the highlighted text to see how
-//        // IntelliJ IDEA suggests fixing it.
-//        System.out.println("Hello and welcome!");
-//
-//        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-//        for (int i = 1; i <= 5; i++) {
-//
-//            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-//            // for you, but you can always add more by pressing Cmd+F8.
-//            System.out.println("i = " + i);
-//        }
-//    }
-//}
 public class Main {
-    public static void main(String[] args){
-        System.out.println("Hello World!");
+    public static void main(String[] args) {
+        sum();
+
+         int ans = sum2();
+         System.out.println("Ans is : " + ans);
+
     }
-        }
+
+    static void sum() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Num 1 : ");
+        int num1 = in.nextInt();
+
+        System.out.print("Num 2 : ");
+        int num2 = in.nextInt();
+
+        int sum = num1 + num2;
+        System.out.println("Sum is : " + sum);
+
+
+    }
+
+    static int sum2() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Num 1 : ");
+        int num1 = in.nextInt();
+
+        System.out.print("Num 2 : ");
+        int num2 = in.nextInt();
+
+        int sum = num1 + num2;
+        return sum;
+
+    }
+}
